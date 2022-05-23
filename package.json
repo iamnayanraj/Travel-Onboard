@@ -1,0 +1,31 @@
+{
+  "name": "travel_onboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cls-hooked": "^4.2.2",
+    "continuation-local-storage": "^3.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "express-intercept": "^0.8.10",
+    "joi": "^17.6.0",
+    "log4js": "^6.4.3",
+    "mssql": "^8.0.2",
+    "node-cache": "^5.1.2",
+    "sequelize": "^6.17.0",
+    "swagger-ui-express": "^4.3.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

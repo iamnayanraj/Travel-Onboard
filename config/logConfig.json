@@ -1,0 +1,21 @@
+{
+  "appenders": {
+    "console": {
+      "type": "console"
+    },
+    "dateFile": {
+      "type": "dateFile",
+      "filename": "",
+      "compress": true,
+      "numBackups": 100,
+      "keepFileExt": true,
+      "maxLogSize": 102400
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": ["dateFile"],
+      "level": "trace"
+    }
+  }
+}

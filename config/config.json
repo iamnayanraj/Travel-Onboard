@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "nayan",
+    "password": "nayan",
+    "database": "Traveldb",
+    "host": "localhost",
+    "dialect": "mssql"
+  }
+}

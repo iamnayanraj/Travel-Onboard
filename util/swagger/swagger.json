@@ -1,0 +1,182 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "defaultDescription",
+    "version": "0.1",
+    "title": "defaultTitle"
+  },
+  "paths": {
+    "/corporate": {
+      "post": {
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": false,
+            "schema": {
+              "$ref": "#/definitions/Model0"
+            },
+            "x-examples": {
+              "application/json": "{\r\n       \"corporateNames\": \"n\",\r\n        \"corporatePhoneNumber\": \"7998301229\",\r\n        \"corporateAddress\": \"Aurangabad\",\r\n        \"corporateCreatedBy\": \"Nayan create\",\r\n        \"corporateModifiedBy\": \"Nayan modify\",\r\n        \"corporateIsActive\": \"1\",\r\n        \"users\":[\r\n            {\r\n                \"corporateUserName\": \"123\",\r\n                \"corporateUserPhoneNumber\": \"1234588\",\r\n                \"corporateUserAddress\": \"Delhi\",\r\n                \"corporateUserCreatedBy\": \"Nayan user create\",\r\n                \"corporateUserModifiedBy\": \"Nayan user modify\",\r\n                \"corporateUserUserName\": \"jw@123\",\r\n                \"corporateUserPassword\": \"jw@123\",\r\n                \"corporateUserIdProof\": \"xyz.png\",\r\n                \"corporateUserIsActive\": 1\r\n            },\r\n            {\r\n               \"corporateUserName\": \"123\",\r\n                \"corporateUserPhoneNumber\": \"1234588\",\r\n                \"corporateUserAddress\": \"Delhi\",\r\n                \"corporateUserCreatedBy\": \"Nayan user create\",\r\n                \"corporateUserModifiedBy\": \"Nayan user modify\",\r\n                \"corporateUserUserName\": \"jw@123\",\r\n                \"corporateUserPassword\": \"jw@123\",\r\n                \"corporateUserIdProof\": \"xyz.png\",\r\n                \"corporateUserIsActive\": 1\r\n            }\r\n        ]\r\n}"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Definition generated from Swagger Inspector",
+            "schema": {
+              "$ref": "#/definitions/Model1"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Users": {
+      "properties": {
+        "corporateUserName": {
+          "type": "string"
+        },
+        "corporateUserPhoneNumber": {
+          "type": "string"
+        },
+        "corporateUserAddress": {
+          "type": "string"
+        },
+        "corporateUserCreatedBy": {
+          "type": "string"
+        },
+        "corporateUserModifiedBy": {
+          "type": "string"
+        },
+        "corporateUserUserName": {
+          "type": "string"
+        },
+        "corporateUserPassword": {
+          "type": "string"
+        },
+        "corporateUserIdProof": {
+          "type": "string"
+        },
+        "corporateUserIsActive": {
+          "type": "integer",
+          "format": "int32"
+        }
+      }
+    },
+    "Model0": {
+      "properties": {
+        "corporateNames": {
+          "type": "string"
+        },
+        "corporatePhoneNumber": {
+          "type": "string"
+        },
+        "corporateAddress": {
+          "type": "string"
+        },
+        "corporateCreatedBy": {
+          "type": "string"
+        },
+        "corporateModifiedBy": {
+          "type": "string"
+        },
+        "corporateIsActive": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Users"
+          }
+        }
+      }
+    },
+    "Model1_Users": {
+      "properties": {
+        "corporateUserId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "corporateUserName": {
+          "type": "string"
+        },
+        "corporateUserPhoneNumber": {
+          "type": "string"
+        },
+        "corporateUserAddress": {
+          "type": "string"
+        },
+        "corporateUserCreatedBy": {
+          "type": "string"
+        },
+        "corporateUserModifiedBy": {
+          "type": "string"
+        },
+        "corporateUserUserName": {
+          "type": "string"
+        },
+        "corporateUserPassword": {
+          "type": "string"
+        },
+        "corporateUserIdProof": {
+          "type": "string"
+        },
+        "corporateUserIsActive": {
+          "type": "boolean"
+        },
+        "corporateId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        }
+      }
+    },
+    "Model1": {
+      "properties": {
+        "corporateId": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "corporateNames": {
+          "type": "string"
+        },
+        "corporatePhoneNumber": {
+          "type": "string"
+        },
+        "corporateAddress": {
+          "type": "string"
+        },
+        "corporateCreatedBy": {
+          "type": "string"
+        },
+        "corporateModifiedBy": {
+          "type": "string"
+        },
+        "corporateIsActive": {
+          "type": "boolean"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Model1_Users"
+          }
+        }
+      }
+    }
+  }
+}
